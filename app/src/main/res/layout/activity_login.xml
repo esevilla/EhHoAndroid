@@ -6,26 +6,29 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".LoginActivity">
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username" />
+        android:hint="@string/hint_username" />
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/inputPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:layout_marginTop="8dp"
-        android:hint="Password" />
+        android:hint="@string/hint_password" />
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        app:backgroundTint="#000"
-        android:hint="LOGIN" />
+        android:hint="@string/label_login"
+        android:onClick="login"/>
 
 
 </LinearLayout>
