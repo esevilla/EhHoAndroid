@@ -1,4 +1,4 @@
-package io.esevilla.eh_ho
+package io.esevilla.eh_ho.data
 
 import java.util.*
 
